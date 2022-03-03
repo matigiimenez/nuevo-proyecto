@@ -14,6 +14,31 @@
     max-height: 80px;
 }
 
+#animacion:hover{
+    animation-name:animation;
+    animation-duration: 4s;
+    animation-delay: 400ms;
+}
+
+@keyframes animation{
+
+    15%{transform: scale(2);}
+
+    25%{border: solid rgb(42, 12, 70);}
+
+    30%{border-radius: 100%;}
+
+    35%{color: rgb(114, 114, 7);}
+
+    50%{color: rgb(255, 255, 0);}
+
+    60%{transform: scale(2);}
+
+    80%{transform: rotate(1500deg);}
+
+}
+
+
 .h3__productos{
     display: flex;
     justify-content: center;
@@ -161,7 +186,7 @@ h3{
     margin-top: 10px;
 }
 
-.ul{
+.lista{
     list-style: none;
 }
 
