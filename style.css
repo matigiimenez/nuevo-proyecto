@@ -152,8 +152,8 @@ h3{
 }
 
 .img__prod{
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
 }
 
 
@@ -170,7 +170,7 @@ h3{
 
 
 .descripcion{
-    font-size: 90%;
+    font-size: 80%;
     margin-top: 15px;
 }
 
@@ -197,7 +197,7 @@ h3{
 }
 
 h4{
-    font-size: 60%;
+    font-size: 95%;
 }
 
 .gabinete{
@@ -248,7 +248,7 @@ ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 10%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(46, 27, 5);
     border-radius: 10px;
 }
 
