@@ -1,0 +1,9 @@
+.productos__index {
+    border: solid #e0ecee;
+    margin: 15px;
+    border-radius: 30px; 
+           &:hover {
+            transition: 290ms;
+            border: solid #a748ff; }
+}
+  

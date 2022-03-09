@@ -1,0 +1,44 @@
+$color:yellow; 
+#animacion:hover{
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-delay: 400ms; }
+  
+  @keyframes animation {
+    15% {
+      transform: scale(2); }
+    25% {
+      border: solid #2a0c46; }
+    30% {
+      border-radius: 100%; }
+    35% {
+      color: #727207; }
+    50% {
+      color: $color; }
+    60% {
+      transform: scale(2); }
+    80% {
+      transform: rotate(1500deg); } }
+  
+  .gamepoint__animacion:hover {
+    animation-name: gamepoint;
+    animation-duration: 5s;
+    animation-delay: 400ms; }
+  
+  @keyframes gamepoint {
+    10% {
+      transform: scale(3); }
+    20% {
+      background-color: blue; }
+    25% {
+      background-color: $color; }
+    30% {
+      background-color: black; }
+    35% {
+      background-color: azure; }
+    50% {
+      transform: rotate(350deg); }
+    60% {
+      transform: rotate(700deg); }
+    70% {
+      transform: scale(2); } }
