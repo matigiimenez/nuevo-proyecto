@@ -7,7 +7,10 @@ body {
   color: #b9b9b9; }
 
 h4 {
-  font-size: 95%; }
+  font-size: 100%; }
+
+ul {
+  list-style: none; }
 
 #animacion:hover {
   animation-name: animation;
@@ -61,7 +64,69 @@ h4 {
     transition: 290ms;
     border: solid #a748ff; }
 
-*
+* {
+  margin: 0%;
+  padding: 0%; }
+
+h4 {
+  font-size: 100%; }
+
+ul {
+  list-style: none; }
+
+#animacion:hover {
+  animation-name: animation;
+  animation-duration: 4s;
+  animation-delay: 400ms; }
+
+@keyframes animation {
+  15% {
+    transform: scale(2); }
+  25% {
+    border: solid #2a0c46; }
+  30% {
+    border-radius: 100%; }
+  35% {
+    color: #727207; }
+  50% {
+    color: yellow; }
+  60% {
+    transform: scale(2); }
+  80% {
+    transform: rotate(1500deg); } }
+
+.gamepoint__animacion:hover {
+  animation-name: gamepoint;
+  animation-duration: 5s;
+  animation-delay: 400ms; }
+
+@keyframes gamepoint {
+  10% {
+    transform: scale(3); }
+  20% {
+    background-color: blue; }
+  25% {
+    background-color: yellow; }
+  30% {
+    background-color: black; }
+  35% {
+    background-color: azure; }
+  50% {
+    transform: rotate(350deg); }
+  60% {
+    transform: rotate(700deg); }
+  70% {
+    transform: scale(2); } }
+
+.productos__index {
+  border: solid #e0ecee;
+  margin: 15px;
+  border-radius: 30px; }
+
+.productos__index:hover {
+  transition: 290ms;
+  border: solid #a748ff; }
+
 .color__header {
   background-color: #16163d; }
 
@@ -205,5 +270,10 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 10%;
-  background-color: #2e1b05;
   border-radius: 10px; }
+
+.relacionados div {
+  border: solid #f5f127;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 15px; }
