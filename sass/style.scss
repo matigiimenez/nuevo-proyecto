@@ -3,62 +3,6 @@
 @import "animaciones";
 @import "hover";
 
-  
-* {
-  margin: 0%;
-  padding: 0%; }
-
-
-
-h4 {
-  font-size: 100%; }
-
-ul {
-  list-style: none; }
-
-#animacion:hover {
-  animation-name: animation;
-  animation-duration: 4s;
-  animation-delay: 400ms; }
-
-@keyframes animation {
-  15% {
-    transform: scale(2); }
-  25% {
-    border: solid #2a0c46; }
-  30% {
-    border-radius: 100%; }
-  35% {
-    color: #727207; }
-  50% {
-    color: yellow; }
-  60% {
-    transform: scale(2); }
-  80% {
-    transform: rotate(1500deg); } }
-
-.gamepoint__animacion:hover {
-  animation-name: gamepoint;
-  animation-duration: 5s;
-  animation-delay: 400ms; }
-
-@keyframes gamepoint {
-  10% {
-    transform: scale(3); }
-  20% {
-    background-color: blue; }
-  25% {
-    background-color: yellow; }
-  30% {
-    background-color: black; }
-  35% {
-    background-color: azure; }
-  50% {
-    transform: rotate(350deg); }
-  60% {
-    transform: rotate(700deg); }
-  70% {
-    transform: scale(2); } }
 
 .productos__index {
   border: solid #e0ecee;
@@ -90,15 +34,7 @@ ul {
   background-color: white;
   color: black; }
 
-img {
-  width: 52%;
-  margin: 15px;
-  padding: 5px; }
 
-a {
-  transition: 270ms;
-  color: #203320;
-  text-decoration: none; }
 
 .footer {
   font-size: 65%;
@@ -112,8 +48,7 @@ a {
   display: flex;
   margin-left: 22%; }
 
-h3 {
-  color: white; }
+
 
 .h3__footer {
   font-size: 190%;
@@ -185,15 +120,7 @@ h3 {
   align-items: center;
   margin-top: 10px; }
 
-.producto__gabin {
-  display: flex;
-  justify-content: center;
-  background-color: #251818;
-  font-size: larger;
-  margin-top: 30px;
-  margin-left: 30%;
-  margin-right: 30%;
-  border-radius: 100px; }
+
 
 .h3__gabin {
   display: flex;
@@ -205,18 +132,6 @@ h3 {
 
 .precio {
   font-size: 160%;
-  color: #008f00; }
+  color: #008f00; 
+}
 
-.relacionados {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 10%;
-  border-radius: 10px; }
-
-.relacionados div{
-  border: solid rgb(245, 241, 39);
-  border-radius: 30px;
-  margin: 5px;
-  padding: 15px;
-
-} 
