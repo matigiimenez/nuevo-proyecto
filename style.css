@@ -1,3 +1,59 @@
+/*
+.operacion1{
+    background-color: $blue;
+    width: ($ancho/3)-60;
+}
+
+.operacion2{
+    background-color: $blue;
+    width: ($ancho/3)+70;
+}
+
+
+}
+*/
+.operacion1 {
+  background-color: #4d4233; }
+
+.operacion2 {
+  background-color: blanchedalmond; }
+
+.operacion3 {
+  background-color: #1d1d5a;
+  width: 470px; }
+
+.btn--twitter {
+  background-color: #55acee;
+  width: 130px; }
+
+.btn--facebook {
+  background-color: #3a5795;
+  width: 130px; }
+
+.btn--instagram {
+  background-color: #C25E30;
+  width: 130px; }
+
+.ex, .ex1, .ex2, .ex3 {
+  border: 5px red;
+  background-color: #494844;
+  margin: 50px; }
+
+.ex1 {
+  border: solid yellow; }
+
+.ex2 {
+  font-family: 'Times New Roman', Times, serif; }
+
+.ex3 {
+  color: green; }
+
+.m-mixin {
+  height: 70px;
+  width: 600px;
+  background-color: yellow;
+  color: black; }
+
 * {
   margin: 0%;
   padding: 0%; }
