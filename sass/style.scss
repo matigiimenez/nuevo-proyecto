@@ -35,14 +35,35 @@
   color: black; }
 
 
+.footer__color{
+  background-color: #232929;
+}
 
+.iconos{
+  width: 30px;
+  margin-left: 38%;
+}
 .footer {
   font-size: 65%;
   margin-top: 50px;
   bottom: 0px;
   display: flex;
   justify-content: space-around;
-  color: #f3dede; }
+  color: #dfd0d0;
+  background-color: #e0ecee;
+ }
+
+ .esp__footer{
+  color: #6b6b6b;
+   li{
+     a{
+       color: #6b6b6b;
+       &:hover{
+         color: #3671dd;
+       }
+     }
+   }
+ }
 
 #footer__logo {
   display: flex;
