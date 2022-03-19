@@ -154,6 +154,24 @@ h3 {
     transition: 290ms;
     border: solid #a748ff; }
 
+.img__prod:hover {
+  transform: scale(1.1);
+  transition: 290ms; }
+
+@media (min-width: 799px) and (max-width: 992px) {
+  .destacados__prod {
+    font-size: 15px;
+    padding: 5px; }
+    .destacados__prod .img__prod {
+      width: 90px;
+      height: 100px; }
+    .destacados__prod ul {
+      display: none; } }
+
+@media (min-width: 600px) and (max-width: 798px) {
+  .producto__gabin {
+    padding: 40px; } }
+
 .productos__index {
   border: solid #e0ecee;
   margin: 15px;
@@ -238,7 +256,8 @@ h3 {
 
 .img__prod {
   width: 80%;
-  height: 80%; }
+  height: 80%;
+  padding: 15px; }
 
 .filtraciones {
   display: flex;
@@ -261,7 +280,7 @@ h3 {
 
 .destacados__prod {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(8, 1fr);
   border: 1px solid black;
   border-radius: 50px;
   margin-bottom: 10px;

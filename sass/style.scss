@@ -2,6 +2,8 @@
 @import "generales";
 @import "animaciones";
 @import "hover";
+@import "vistamobile";
+
 
 
 .productos__index {
@@ -97,7 +99,9 @@
 
 .img__prod {
   width: 80%;
-  height: 80%; }
+  height: 80%;
+  padding: 15px;
+}
 
 .filtraciones {
   display: flex;
@@ -120,7 +124,7 @@
 
 .destacados__prod {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(8, 1fr);
   border: 1px solid black;
   border-radius: 50px;
   margin-bottom: 10px;
