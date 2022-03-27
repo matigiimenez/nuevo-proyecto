@@ -98,9 +98,11 @@
   margin-top: 150px; }
 
 .img__prod {
-  width: 80%;
-  height: 80%;
+  width: 200px;
+  height: 200px;
   padding: 15px;
+  border: solid rgb(243, 242, 242);
+  border-radius: 30px;
 }
 
 .filtraciones {
@@ -112,8 +114,21 @@
   font-size: 250%; }
 
 .descripcion {
-  font-size: 80%;
-  margin-top: 15px; }
+  font-size: 100%;
+  margin-top: 15px; 
+  color: black;
+  background-color: #ffffff;
+  border: solid rgb(46, 46, 42);
+  border-radius: 20px;
+}
+
+.articulo{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 25px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
 
 .semana {
   display: flex;
@@ -121,18 +136,6 @@
   margin: 5px;
   margin: 20px;
   margin-top: 60px; }
-
-.destacados__prod {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  border: 1px solid black;
-  border-radius: 50px;
-  margin-bottom: 10px;
-  background-color: white;
-  color: black;
-  margin-top: 3%;
-  margin-left: 5%;
-  margin-right: 5%; }
 
 .gabinete {
   width: 35%;
@@ -152,8 +155,7 @@
   justify-content: center;
   margin-top: 30px; }
 
-.lista {
-  list-style: none; }
+
 
 .precio {
   font-size: 160%;

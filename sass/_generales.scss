@@ -32,6 +32,10 @@ h3 {
     color: white;
 }
 
+.lista {
+    list-style: none; 
+}
+
 .relacionados {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -1,4 +1,4 @@
-@media (min-width: 799px) and (max-width: 992px){
+@media (min-width: 750px) and (max-width: 992px){
 
     .destacados__prod {
         font-size: 15px;
@@ -15,14 +15,29 @@
          }
 
     }
+
+    .producto__gabin{
+        padding: 10px;
+        margin-left: 190px;
+        margin-right: 190px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
       
 }
 
-@media (min-width: 600px) and (max-width: 798px){
+
+
+@media (min-width: 550px) and (max-width: 749px){
 
 
     .producto__gabin{
-        padding: 40px;
+        padding: 10px;
+        margin-left: 90px;
+        margin-right: 90px;
     }
 
   
