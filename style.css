@@ -1,17 +1,3 @@
-/*
-.operacion1{
-    background-color: $blue;
-    width: ($ancho/3)-60;
-}
-
-.operacion2{
-    background-color: $blue;
-    width: ($ancho/3)+70;
-}
-
-
-}
-*/
 .operacion1 {
   background-color: #4d4233; }
 
@@ -22,6 +8,7 @@
   background-color: #1d1d5a;
   width: 470px; }
 
+/*Esto es solo para que puedan corregir SASSII*/
 .btn--twitter {
   background-color: #55acee;
   width: 130px; }
@@ -87,7 +74,10 @@ h3 {
 .relacionados {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  margin-top: 5%;
   border-radius: 10px; }
   .relacionados div {
     border: solid #50504b;
@@ -188,10 +178,9 @@ h3 {
   border: solid #e0ecee;
   margin: 15px;
   border-radius: 30px; }
-
-.productos__index:hover {
-  transition: 290ms;
-  border: solid #a748ff; }
+  .productos__index .productos__index:hover {
+    transition: 290ms;
+    border: solid #a748ff; }
 
 .color__header {
   background-color: #16163d; }
@@ -217,54 +206,39 @@ h3 {
 
 .footer__color {
   background-color: #232929; }
+  .footer__color .esp__footer {
+    color: #6b6b6b; }
+    .footer__color .esp__footer li a {
+      color: #6b6b6b; }
+      .footer__color .esp__footer li a:hover {
+        color: #3671dd; }
+  .footer__color .h3__footer {
+    font-size: 190%;
+    margin-top: 10px; }
+  .footer__color #footer__logo {
+    display: flex;
+    margin-left: 22%; }
 
 .iconos {
   width: 30px;
   margin-left: 38%; }
 
-.footer {
-  font-size: 65%;
-  margin-top: 50px;
-  bottom: 0px;
-  display: flex;
-  justify-content: space-around;
-  color: #dfd0d0;
-  background-color: #e0ecee; }
-
-.esp__footer {
-  color: #6b6b6b; }
-  .esp__footer li a {
-    color: #6b6b6b; }
-    .esp__footer li a:hover {
-      color: #3671dd; }
-
-#footer__logo {
-  display: flex;
-  margin-left: 22%; }
-
-.h3__footer {
-  font-size: 190%;
-  margin-top: 10px; }
-
 .main__nosotros {
   padding: 20px; }
-
-.div__nosotros {
-  border: solid #052c05;
-  border-radius: 50px;
-  padding: 15px;
-  background-color: #093838;
-  margin-top: 100px; }
-
-.div__nosotros--cont {
-  background-color: #250d0d;
-  border: solid #052c05;
-  border-radius: 50px;
-  padding: 15px;
-  margin-top: 90px; }
-
-.formulario {
-  margin-top: 150px; }
+  .main__nosotros .div__nosotros {
+    border: solid #052c05;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: #093838;
+    margin-top: 100px; }
+  .main__nosotros .div__nosotros--cont {
+    background-color: #250d0d;
+    border: solid #052c05;
+    border-radius: 50px;
+    padding: 15px;
+    margin-top: 90px; }
+  .main__nosotros .formulario {
+    margin-top: 150px; }
 
 .img__prod {
   width: 200px;
@@ -276,6 +250,12 @@ h3 {
 .filtraciones {
   display: flex;
   justify-content: space-around; }
+  .filtraciones ul {
+    text-decoration: none; }
+    .filtraciones ul a {
+      color: #aeb3b3; }
+    .filtraciones ul a:hover {
+      color: #0e91c5; }
 
 #productos__semana {
   color: #0e91c5;
@@ -288,19 +268,20 @@ h3 {
   background-color: #ffffff;
   border: solid #2e2e2a;
   border-radius: 20px; }
+  .descripcion ul {
+    margin-right: 30px; }
 
 .articulo {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 25px;
+  gap: 35px;
   margin-left: 70px;
   margin-right: 70px; }
 
 .semana {
   display: flex;
   justify-content: center;
-  margin: 5px;
-  margin: 20px;
+  margin: 25px;
   margin-top: 60px; }
 
 .gabinete {
@@ -317,8 +298,55 @@ h3 {
 .h3__gabin {
   display: flex;
   justify-content: center;
-  margin-top: 30px; }
+  margin-top: 30px;
+  font-size: 45px; }
 
 .precio {
   font-size: 160%;
   color: #008f00; }
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 40%;
+  margin-left: 40%; }
+  .social .redes {
+    width: 50px;
+    height: 50px; }
+
+.formulario {
+  width: 400px;
+  background-color: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 90px;
+  border-radius: 8px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white; }
+  .formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .formulario input {
+    width: 100%;
+    background-color: #155050;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5; }
+  .formulario p {
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none; }
+  .formulario button {
+    width: 100%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    color: white; }
+  .formulario a {
+    text-decoration: none; }
+  .formulario .consulta {
+    height: 70px; }
