@@ -1,46 +1,3 @@
-.operacion1 {
-  background-color: #4d4233; }
-
-.operacion2 {
-  background-color: blanchedalmond; }
-
-.operacion3 {
-  background-color: #1d1d5a;
-  width: 470px; }
-
-/*Esto es solo para que puedan corregir SASSII*/
-.btn--twitter {
-  background-color: #55acee;
-  width: 130px; }
-
-.btn--facebook {
-  background-color: #3a5795;
-  width: 130px; }
-
-.btn--instagram {
-  background-color: #C25E30;
-  width: 130px; }
-
-.ex, .ex1, .ex2, .ex3 {
-  border: 5px red;
-  background-color: #494844;
-  margin: 50px; }
-
-.ex1 {
-  border: solid yellow; }
-
-.ex2 {
-  font-family: 'Times New Roman', Times, serif; }
-
-.ex3 {
-  color: green; }
-
-.m-mixin {
-  height: 70px;
-  width: 600px;
-  background-color: yellow;
-  color: black; }
-
 * {
   margin: 0%;
   padding: 0%; }
@@ -95,26 +52,64 @@ h3 {
   margin-right: 30%;
   border-radius: 100px; }
 
+.operacion1 {
+  background-color: #4d4233; }
+
+.operacion2 {
+  background-color: blanchedalmond; }
+
+.operacion3 {
+  background-color: #1d1d5a;
+  width: 470px; }
+
+/*Esto es solo para que puedan corregir SASSII*/
+.btn--twitter {
+  background-color: #55acee;
+  width: 130px; }
+
+.btn--facebook {
+  background-color: #3a5795;
+  width: 130px; }
+
+.btn--instagram {
+  background-color: #C25E30;
+  width: 130px; }
+
+.ex, .ex1, .ex2, .ex3 {
+  border: 5px red;
+  background-color: #494844;
+  margin: 50px; }
+
+.ex1 {
+  border: solid yellow; }
+
+.ex2 {
+  font-family: 'Times New Roman', Times, serif; }
+
+.ex3 {
+  color: green; }
+
+.m-mixin {
+  height: 70px;
+  width: 600px;
+  background-color: yellow;
+  color: black; }
+
 #animacion:hover {
   animation-name: animation;
   animation-duration: 4s;
-  animation-delay: 400ms; }
+  animation-delay: 400ms;
+  position: relative; }
 
 @keyframes animation {
   15% {
-    transform: scale(2); }
+    transform: scale(1.3); }
   25% {
-    border: solid #2a0c46; }
-  30% {
-    border-radius: 100%; }
+    color: darkblue; }
   35% {
     color: #727207; }
   50% {
-    color: yellow; }
-  60% {
-    transform: scale(2); }
-  80% {
-    transform: rotate(1500deg); } }
+    color: yellow; } }
 
 .gamepoint__animacion:hover {
   animation-name: gamepoint;
@@ -123,21 +118,47 @@ h3 {
 
 @keyframes gamepoint {
   10% {
-    transform: scale(3); }
+    transform: scale(1.6); }
   20% {
-    background-color: blue; }
+    color: darkblue; }
   25% {
-    background-color: yellow; }
-  30% {
     background-color: black; }
-  35% {
-    background-color: azure; }
-  50% {
-    transform: rotate(350deg); }
-  60% {
-    transform: rotate(700deg); }
-  70% {
-    transform: scale(2); } }
+  30% {
+    background-color: yellow; }
+  40% {
+    background-color: #fff; } }
+
+.boton {
+  position: relative;
+  padding: 20px;
+  background: white;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1000ms; }
+  .boton:after, .boton:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s; }
+  .boton:after {
+    top: -1px;
+    left: -1px;
+    border-top: 5px solid black;
+    border-left: 5px solid black; }
+  .boton:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black; }
+  .boton:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px; }
+    .boton:hover:before, .boton:hover:after {
+      width: 100%;
+      height: 100%; }
 
 .productos__index {
   border: solid #e0ecee;

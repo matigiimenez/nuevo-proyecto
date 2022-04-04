@@ -7,26 +7,33 @@ $green:green;
 
 $animal:pez;
 
-.operacion1{
-    @if $animal == gato{
+.operacion1 {
+    @if $animal==gato {
         background-color: yellow;
-    } @else if $animal == perro{
+    }
+
+    @else if $animal==perro {
         background-color: aquamarine;
-    } @else if $animal == caballo{
+    }
+
+    @else if $animal==caballo {
         background-color: bisque;
-    } @else {
+    }
+
+    @else {
         background-color: rgb(77, 66, 51);
     }
 }
 
 $ver:true;
-.operacion2{
+
+.operacion2 {
     @if $ver {
         background-color: blanchedalmond;
     }
 }
 
-.operacion3{
+.operacion3 {
     background-color: $blue;
     width: ($ancho/3)+70;
 }
@@ -36,60 +43,61 @@ $bucle:false;
 
 @if $bucle {
 
-@for $i from 1 through 3{
-    .bucle-#{$i}{
-        background-color: rgb(1, 117, 117);
-        width: 190px *$i;
+    @for $i from 1 through 3 {
+        .bucle-#{$i} {
+            background-color: rgb(1, 117, 117);
+            width: 190px *$i;
+        }
     }
-}
 
 }
 
 
 /*Esto es solo para que puedan corregir SASSII*/
-$redes:(
-    twitter: #55acee,
+$redes:(twitter: #55acee,
     facebook: #3a5795,
     instagram: #C25E30,
 );
 
 
-@each $red, $colorr in $redes {
-    .btn--#{$red}{
+@each $red,
+$colorr in $redes {
+    .btn--#{$red} {
         background-color: $colorr;
         width: 130px;
     }
-};
+}
 
-.ex{
+;
+
+.ex {
     border: 5px red;
     background-color: rgb(73, 72, 68);
     margin: 50px;
 }
 
-.ex1{
+.ex1 {
     @extend .ex;
     border: solid yellow;
 }
 
-.ex2{
+.ex2 {
     @extend .ex;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.ex3{
+.ex3 {
     @extend .ex;
     color: green;
 }
 
-@mixin size ($width, $height){
+@mixin size ($width, $height) {
     height: $height;
     width: $width;
 }
 
-.m-mixin{
-    @include size(600px,70px);
+.m-mixin {
+    @include size(600px, 70px);
     background-color: $color;
     color: black;
 }
-

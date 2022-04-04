@@ -1,18 +1,17 @@
 .productos__index {
     border: solid #e0ecee;
     margin: 15px;
-    border-radius: 30px; 
-           &:hover {
-            transition: 290ms;
-            border: solid #a748ff;
-         }
-}
+    border-radius: 30px;
 
-.img__prod{
-    &:hover{
-        transform: scale(1.1);
-        transition: 290ms; 
+    &:hover {
+        transition: 290ms;
+        border: solid #a748ff;
     }
 }
 
-
+.img__prod {
+    &:hover {
+        transform: scale(1.1);
+        transition: 290ms;
+    }
+}
